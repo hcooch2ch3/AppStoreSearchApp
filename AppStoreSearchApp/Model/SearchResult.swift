@@ -37,12 +37,12 @@ struct Result: Codable {
     let trackContentRating: String?
     let appDescription, bundleId: String?
     let genreIds: [String]?
-    let releaseDate: Date?
+    let releaseDate: String?
     let sellerName, primaryGenreName: String?
     let primaryGenreId, trackId: Int?
     let trackName: String?
     let isVppDeviceBasedLicensingEnabled: Bool?
-    let currentVersionReleaseDate: Date?
+    let currentVersionReleaseDate: String?
     let releaseNotes: String?
     let artistId: Int?
     let artistName: String?

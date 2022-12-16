@@ -37,6 +37,16 @@ class SearchViewController: UIViewController {
             }
             .disposed(by: disposeBag)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destination = segue.destination as? AppDetailViewController,
+              let cell = sender as? UITableViewCell,
+              let indexPath = appTableView.indexPath(for: cell),
+              let results = try? viewModel.results.value() else { return }
+        
+        let result = results[indexPath.row]
+        destination.result = result
+    }
 }
 
 extension SearchViewController: UISearchBarDelegate {

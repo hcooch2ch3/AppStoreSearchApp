@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3613139C294C4B3A00BB42A4 /* AppDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3613139B294C4B3A00BB42A4 /* AppDetailViewController.swift */; };
+		3613139E294CBC5700BB42A4 /* ScreenshotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3613139D294CBC5700BB42A4 /* ScreenshotCell.swift */; };
 		366FBBAA2949D1CC00F8E7B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366FBBA92949D1CC00F8E7B3 /* AppDelegate.swift */; };
 		366FBBAC2949D1CC00F8E7B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366FBBAB2949D1CC00F8E7B3 /* SceneDelegate.swift */; };
 		366FBBAE2949D1CC00F8E7B3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366FBBAD2949D1CC00F8E7B3 /* SearchViewController.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3613139B294C4B3A00BB42A4 /* AppDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailViewController.swift; sourceTree = "<group>"; };
+		3613139D294CBC5700BB42A4 /* ScreenshotCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotCell.swift; sourceTree = "<group>"; };
 		366FBBA62949D1CC00F8E7B3 /* AppStoreSearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStoreSearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		366FBBA92949D1CC00F8E7B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		366FBBAB2949D1CC00F8E7B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 			children = (
 				366FBBAD2949D1CC00F8E7B3 /* SearchViewController.swift */,
 				366FBBE0294AF76600F8E7B3 /* AppCell.swift */,
+				3613139B294C4B3A00BB42A4 /* AppDetailViewController.swift */,
+				3613139D294CBC5700BB42A4 /* ScreenshotCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -204,6 +210,8 @@
 				366FBBDE294A37CA00F8E7B3 /* SearchViewModel.swift in Sources */,
 				366FBBE1294AF76600F8E7B3 /* AppCell.swift in Sources */,
 				366FBBAE2949D1CC00F8E7B3 /* SearchViewController.swift in Sources */,
+				3613139C294C4B3A00BB42A4 /* AppDetailViewController.swift in Sources */,
+				3613139E294CBC5700BB42A4 /* ScreenshotCell.swift in Sources */,
 				366FBBAA2949D1CC00F8E7B3 /* AppDelegate.swift in Sources */,
 				366FBBDB294A36C400F8E7B3 /* SearchService.swift in Sources */,
 				366FBBD8294A340000F8E7B3 /* SearchResult.swift in Sources */,

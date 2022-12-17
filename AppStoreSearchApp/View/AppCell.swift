@@ -59,6 +59,7 @@ class AppCell: UITableViewCell {
             screenShotsStackView.addArrangedSubview(imageView)
             imageView.translatesAutoresizingMaskIntoConstraints = false
             imageView.widthAnchor.constraint(equalTo: screenShotsStackView.widthAnchor, multiplier: 1).isActive = true
+            imageView.heightAnchor.constraint(equalTo: imageView.widthAnchor, multiplier: 228.0/406.0).isActive = true
         }
     }
     

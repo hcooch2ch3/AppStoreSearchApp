@@ -155,7 +155,7 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="G5P-Lh-QBY" secondAttribute="bottom" constant="15" id="BZd-PC-DOL"/>
+                                                <constraint firstAttribute="bottom" secondItem="G5P-Lh-QBY" secondAttribute="bottom" priority="999" constant="15" id="BZd-PC-DOL"/>
                                                 <constraint firstItem="G5P-Lh-QBY" firstAttribute="leading" secondItem="JbR-aW-r20" secondAttribute="leading" constant="15" id="KlX-fM-8c2"/>
                                                 <constraint firstItem="G5P-Lh-QBY" firstAttribute="top" secondItem="JbR-aW-r20" secondAttribute="top" constant="15" id="WdY-2g-ePw"/>
                                                 <constraint firstAttribute="trailing" secondItem="G5P-Lh-QBY" secondAttribute="trailing" constant="15" id="shD-79-gVh"/>

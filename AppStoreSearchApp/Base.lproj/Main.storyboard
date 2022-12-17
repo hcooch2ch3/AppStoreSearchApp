@@ -18,12 +18,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XGK-yc-I9d">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XGK-yc-I9d">
                                 <rect key="frame" x="0.0" y="103" width="393" height="749"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecentKeywordCell" id="TKR-fF-y58" customClass="RecentKeywordCell" customModule="AppStoreSearchApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="50.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TKR-fF-y58" id="Y0u-Z4-Hm1">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="50.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fV-bm-6v1">
+                                                    <rect key="frame" x="15.000000000000004" y="15.000000000000002" width="41.333333333333343" height="20.666666666666671"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1fV-bm-6v1" firstAttribute="leading" secondItem="Y0u-Z4-Hm1" secondAttribute="leading" constant="15" id="10H-oh-YA6"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1fV-bm-6v1" secondAttribute="trailing" constant="20" symbolic="YES" id="K4p-eQ-3p9"/>
+                                                <constraint firstItem="1fV-bm-6v1" firstAttribute="top" secondItem="Y0u-Z4-Hm1" secondAttribute="top" constant="15" id="LWW-0S-p1a"/>
+                                                <constraint firstAttribute="bottom" secondItem="1fV-bm-6v1" secondAttribute="bottom" constant="15" id="jJ4-zF-zhi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="recentKeywordLabel" destination="1fV-bm-6v1" id="3go-xt-ZVW"/>
+                                        </connections>
+                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AppCell" id="xze-e4-TVT" customClass="AppCell" customModule="AppStoreSearchApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="236.66667175292969"/>
+                                        <rect key="frame" x="0.0" y="100.66666793823242" width="393" height="236.66667175292969"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xze-e4-TVT" id="JbR-aW-r20">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="236.66667175292969"/>
@@ -146,6 +170,39 @@
                                             <outlet property="subtitleLabel" destination="Obh-V3-Rvx" id="nB9-qt-qg3"/>
                                             <outlet property="titleLabel" destination="VHZ-NF-boe" id="ac3-wk-Vgh"/>
                                             <segue destination="43c-29-TBQ" kind="show" identifier="ShowAppDetail" id="Z7a-1Z-JwQ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="KeywordCell" id="Qik-tL-Uo5" customClass="KeywordCell" customModule="AppStoreSearchApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="337.33333969116211" width="393" height="50.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qik-tL-Uo5" id="baE-Mw-IXZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="50.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LcO-ip-nag">
+                                                    <rect key="frame" x="15" y="15.000000000000002" width="363" height="20.666666666666671"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="nQ9-3t-fhp">
+                                                            <rect key="frame" x="0.0" y="1.3333333333333321" width="20.333333333333332" height="18.666666666666664"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSs-YI-nK6">
+                                                            <rect key="frame" x="25.333333333333343" y="0.33333333333333393" width="337.66666666666663" height="20.333333333333329"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="LcO-ip-nag" firstAttribute="top" secondItem="baE-Mw-IXZ" secondAttribute="top" constant="15" id="5B5-XW-IVq"/>
+                                                <constraint firstAttribute="bottom" secondItem="LcO-ip-nag" secondAttribute="bottom" constant="15" id="9cE-Ff-qZF"/>
+                                                <constraint firstItem="LcO-ip-nag" firstAttribute="leading" secondItem="baE-Mw-IXZ" secondAttribute="leading" constant="15" id="bBG-Zd-cXV"/>
+                                                <constraint firstAttribute="trailing" secondItem="LcO-ip-nag" secondAttribute="trailing" constant="15" id="oDj-nT-Ao6"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="keywordLabel" destination="WSs-YI-nK6" id="qTS-zm-pMf"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -457,6 +514,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

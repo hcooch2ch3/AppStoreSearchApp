@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		3613139C294C4B3A00BB42A4 /* AppDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3613139B294C4B3A00BB42A4 /* AppDetailViewController.swift */; };
 		3613139E294CBC5700BB42A4 /* ScreenshotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3613139D294CBC5700BB42A4 /* ScreenshotCell.swift */; };
+		361AE26A294D8BBB0092FCD2 /* KeywordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361AE269294D8BBB0092FCD2 /* KeywordCell.swift */; };
+		361AE26C294D8EF70092FCD2 /* Listable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361AE26B294D8EF70092FCD2 /* Listable.swift */; };
+		361AE26E294D90590092FCD2 /* Keyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361AE26D294D90590092FCD2 /* Keyword.swift */; };
+		361AE270294DE3CA0092FCD2 /* RecentKeywordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361AE26F294DE3CA0092FCD2 /* RecentKeywordCell.swift */; };
 		366FBBAA2949D1CC00F8E7B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366FBBA92949D1CC00F8E7B3 /* AppDelegate.swift */; };
 		366FBBAC2949D1CC00F8E7B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366FBBAB2949D1CC00F8E7B3 /* SceneDelegate.swift */; };
 		366FBBAE2949D1CC00F8E7B3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366FBBAD2949D1CC00F8E7B3 /* SearchViewController.swift */; };
@@ -28,6 +32,10 @@
 /* Begin PBXFileReference section */
 		3613139B294C4B3A00BB42A4 /* AppDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailViewController.swift; sourceTree = "<group>"; };
 		3613139D294CBC5700BB42A4 /* ScreenshotCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotCell.swift; sourceTree = "<group>"; };
+		361AE269294D8BBB0092FCD2 /* KeywordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordCell.swift; sourceTree = "<group>"; };
+		361AE26B294D8EF70092FCD2 /* Listable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listable.swift; sourceTree = "<group>"; };
+		361AE26D294D90590092FCD2 /* Keyword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyword.swift; sourceTree = "<group>"; };
+		361AE26F294DE3CA0092FCD2 /* RecentKeywordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentKeywordCell.swift; sourceTree = "<group>"; };
 		366FBBA62949D1CC00F8E7B3 /* AppStoreSearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStoreSearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		366FBBA92949D1CC00F8E7B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		366FBBAB2949D1CC00F8E7B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				366FBBD7294A340000F8E7B3 /* SearchResult.swift */,
+				361AE26B294D8EF70092FCD2 /* Listable.swift */,
+				361AE26D294D90590092FCD2 /* Keyword.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -121,6 +131,8 @@
 				366FBBE0294AF76600F8E7B3 /* AppCell.swift */,
 				3613139B294C4B3A00BB42A4 /* AppDetailViewController.swift */,
 				3613139D294CBC5700BB42A4 /* ScreenshotCell.swift */,
+				361AE269294D8BBB0092FCD2 /* KeywordCell.swift */,
+				361AE26F294DE3CA0092FCD2 /* RecentKeywordCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -208,11 +220,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				366FBBDE294A37CA00F8E7B3 /* SearchViewModel.swift in Sources */,
+				361AE26E294D90590092FCD2 /* Keyword.swift in Sources */,
 				366FBBE1294AF76600F8E7B3 /* AppCell.swift in Sources */,
 				366FBBAE2949D1CC00F8E7B3 /* SearchViewController.swift in Sources */,
+				361AE26A294D8BBB0092FCD2 /* KeywordCell.swift in Sources */,
+				361AE26C294D8EF70092FCD2 /* Listable.swift in Sources */,
 				3613139C294C4B3A00BB42A4 /* AppDetailViewController.swift in Sources */,
 				3613139E294CBC5700BB42A4 /* ScreenshotCell.swift in Sources */,
 				366FBBAA2949D1CC00F8E7B3 /* AppDelegate.swift in Sources */,
+				361AE270294DE3CA0092FCD2 /* RecentKeywordCell.swift in Sources */,
 				366FBBDB294A36C400F8E7B3 /* SearchService.swift in Sources */,
 				366FBBD8294A340000F8E7B3 /* SearchResult.swift in Sources */,
 				366FBBAC2949D1CC00F8E7B3 /* SceneDelegate.swift in Sources */,

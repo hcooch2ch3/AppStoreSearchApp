@@ -14,7 +14,7 @@ struct SearchResult: Codable {
 }
 
 // MARK: - Result
-struct Result: Codable {
+struct Result: Codable, Listable {
     let screenshotUrls, ipadScreenshotUrls: [String]?
     let appletvScreenshotUrls: [String]?
     let artworkUrl60, artworkUrl512, artworkUrl100: String?

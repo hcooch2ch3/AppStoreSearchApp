@@ -12,17 +12,15 @@ class AppDetailViewController: UIViewController {
     
     @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var screenshotCollectionView: UICollectionView!
     @IBOutlet weak var appDescriptionLabel: UILabel!
     @IBOutlet weak var showMoreButton: UIButton!
+    @IBOutlet weak var screenshotCollectionViewHeight: NSLayoutConstraint!
     
     private enum Const {
-        static let itemSize = CGSize(width: 200, height: 300)
-        static let itemSpacing = 3.0
-        
-        static var insetX: CGFloat {
-            5
-        }
+        static var itemSize = CGSize(width: 200, height: 300)
+        static let itemSpacing = 2.0
         static var collectionViewContentInset: UIEdgeInsets {
             UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         }
@@ -31,11 +29,22 @@ class AppDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if let firstUrl = result?.screenshotUrls?.first, firstUrl.contains("406x228") {
+            let ratio = 0.8
+            let width = 406 * ratio
+            let height = 228 * ratio
+            Const.itemSize = CGSize(width: width, height: height)
+            screenshotCollectionViewHeight.constant = height + 5
+        } else {
+            Const.itemSize = CGSize(width: 200, height: 300)
+        }
+        
         titleLabel.text = result?.trackName
         if let artworkUrl512 = result?.artworkUrl512, let url = URL(string: artworkUrl512) {
             iconImageView.kf.setImage(with: url)
         }
         appDescriptionLabel.text = result?.appDescription
+        subtitleLabel.text = result?.artistName
         
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal

@@ -9,4 +9,10 @@ import UIKit
 
 class ScreenshotCell: UICollectionViewCell {
     @IBOutlet weak var screenShotImageView: UIImageView!
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        screenShotImageView.kf.cancelDownloadTask()
+    }
 }

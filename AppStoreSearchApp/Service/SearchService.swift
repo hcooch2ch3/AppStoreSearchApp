@@ -33,3 +33,17 @@ class SearchService {
         }
     }
 }
+
+class MockSearchService: SearchService {
+    override func searchApp(_ keyword: String) -> Observable<SearchResult> {
+        return Observable<SearchResult>.create { observer in
+            let result = Result(screenshotUrls: nil, ipadScreenshotUrls: nil, appletvScreenshotUrls: nil, artworkUrl60: nil, artworkUrl512: nil, artworkUrl100: nil, artistViewUrl: nil, isGameCenterEnabled: nil, features: nil, supportedDevices: nil, advisories: nil, kind: nil, currency: nil, minimumOsVersion: nil, trackCensoredName: nil, languageCodesISO2A: nil, fileSizeBytes: nil, sellerUrl: nil, formattedPrice: nil, contentAdvisoryRating: nil, averageUserRatingForCurrentVersion: nil, userRatingCountForCurrentVersion: nil, averageUserRating: nil, trackViewUrl: nil, trackContentRating: nil, appDescription: nil, bundleId: nil, genreIds: nil, releaseDate: nil, sellerName: nil, primaryGenreName: nil, primaryGenreId: nil, trackId: nil, trackName: "MockSearchService", isVppDeviceBasedLicensingEnabled: nil, currentVersionReleaseDate: nil, releaseNotes: nil, artistId: nil, artistName: nil, genres: nil, price: nil, version: nil, wrapperType: nil, userRatingCount: nil)
+            let searchResult = SearchResult(resultCount: 1, results: [result])
+            
+            observer.onNext(searchResult)
+            observer.onCompleted()
+            
+            return Disposables.create {}
+        }
+    }
+}

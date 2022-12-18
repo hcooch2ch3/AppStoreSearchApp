@@ -10,7 +10,7 @@ import RxSwift
 import RxCocoa
 
 class SearchViewModel {
-    private let searchService = SearchService()
+    var searchService: SearchService = SearchService()
     private let disposeBag = DisposeBag()
     let results = BehaviorSubject<[Listable]>(value: [])
     var searchMode: SearchMode = .recent {
@@ -22,6 +22,8 @@ class SearchViewModel {
             }
         }
     }
+    var fileStorage = UserDefaults.standard
+    let fileStorageKey = "RecentKeywords"
     
     enum SearchMode {
         case recent
@@ -33,7 +35,7 @@ class SearchViewModel {
         loadRecentKeyword()
     }
     
-    func searchApp(_ keyword: String) {
+    func searchApp(_ keyword: String, _ completion: @escaping () -> Void) {
         searchService.searchApp(keyword)
             .subscribe(onNext: { [weak self] searchResult in
                 guard let self = self,
@@ -49,6 +51,7 @@ class SearchViewModel {
                     }
                     self.results.onNext(keywords)
                 }
+                completion()
             }, onError: { error in
                 print("error", error)
             })
@@ -56,17 +59,17 @@ class SearchViewModel {
     }
     
     func saveRecentKeyword(_ keyword: String) {
-        if var recentKeywords = UserDefaults.standard.array(forKey: "RecentKeywords") as? [String] {
+        if var recentKeywords = fileStorage.array(forKey: fileStorageKey) as? [String] {
             guard recentKeywords.contains(keyword) == false else { return }
             recentKeywords.append(keyword)
-            UserDefaults.standard.set(recentKeywords, forKey: "RecentKeywords")
+            fileStorage.set(recentKeywords, forKey: fileStorageKey)
         } else {
-            UserDefaults.standard.set([keyword], forKey: "RecentKeywords")
+            fileStorage.set([keyword], forKey: fileStorageKey)
         }
     }
     
     func loadRecentKeyword() {
-        guard let recentKeywords = UserDefaults.standard.array(forKey: "RecentKeywords") as? [String] else {
+        guard let recentKeywords = fileStorage.array(forKey: fileStorageKey) as? [String] else {
             results.onNext([])
             return
         }

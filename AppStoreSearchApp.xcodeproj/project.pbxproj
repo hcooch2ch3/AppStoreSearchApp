@@ -13,6 +13,8 @@
 		361AE26C294D8EF70092FCD2 /* Listable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361AE26B294D8EF70092FCD2 /* Listable.swift */; };
 		361AE26E294D90590092FCD2 /* Keyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361AE26D294D90590092FCD2 /* Keyword.swift */; };
 		361AE270294DE3CA0092FCD2 /* RecentKeywordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361AE26F294DE3CA0092FCD2 /* RecentKeywordCell.swift */; };
+		361AE281294E9BBC0092FCD2 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 361AE280294E9BBC0092FCD2 /* RxCocoa */; };
+		361AE283294E9BBD0092FCD2 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 361AE282294E9BBD0092FCD2 /* RxSwift */; };
 		366FBBAA2949D1CC00F8E7B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366FBBA92949D1CC00F8E7B3 /* AppDelegate.swift */; };
 		366FBBAC2949D1CC00F8E7B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366FBBAB2949D1CC00F8E7B3 /* SceneDelegate.swift */; };
 		366FBBAE2949D1CC00F8E7B3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366FBBAD2949D1CC00F8E7B3 /* SearchViewController.swift */; };
@@ -21,13 +23,24 @@
 		366FBBB62949D1CE00F8E7B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 366FBBB42949D1CE00F8E7B3 /* LaunchScreen.storyboard */; };
 		366FBBC6294A2D3200F8E7B3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 366FBBC5294A2D3200F8E7B3 /* Alamofire */; };
 		366FBBC9294A2D5D00F8E7B3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 366FBBC8294A2D5D00F8E7B3 /* Kingfisher */; };
-		366FBBD3294A327800F8E7B3 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 366FBBD2294A327800F8E7B3 /* RxCocoa */; };
-		366FBBD5294A327800F8E7B3 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 366FBBD4294A327800F8E7B3 /* RxSwift */; };
 		366FBBD8294A340000F8E7B3 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366FBBD7294A340000F8E7B3 /* SearchResult.swift */; };
 		366FBBDB294A36C400F8E7B3 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366FBBDA294A36C400F8E7B3 /* SearchService.swift */; };
 		366FBBDE294A37CA00F8E7B3 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366FBBDD294A37CA00F8E7B3 /* SearchViewModel.swift */; };
 		366FBBE1294AF76600F8E7B3 /* AppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366FBBE0294AF76600F8E7B3 /* AppCell.swift */; };
+		36AE2EC6294E9E0C007B0F67 /* AppStoreSearchAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AE2EC5294E9E0C007B0F67 /* AppStoreSearchAppTests.swift */; };
+		36AE2ED1294E9F6D007B0F67 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 36AE2ED0294E9F6D007B0F67 /* RxCocoa */; };
+		36AE2ED3294E9F6D007B0F67 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 36AE2ED2294E9F6D007B0F67 /* RxSwift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		36AE2EC7294E9E0C007B0F67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 366FBB9E2949D1CC00F8E7B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 366FBBA52949D1CC00F8E7B3;
+			remoteInfo = AppStoreSearchApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3613139B294C4B3A00BB42A4 /* AppDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +61,8 @@
 		366FBBDA294A36C400F8E7B3 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
 		366FBBDD294A37CA00F8E7B3 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		366FBBE0294AF76600F8E7B3 /* AppCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCell.swift; sourceTree = "<group>"; };
+		36AE2EC3294E9E0C007B0F67 /* AppStoreSearchAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppStoreSearchAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36AE2EC5294E9E0C007B0F67 /* AppStoreSearchAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreSearchAppTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +70,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				366FBBD3294A327800F8E7B3 /* RxCocoa in Frameworks */,
+				361AE281294E9BBC0092FCD2 /* RxCocoa in Frameworks */,
 				366FBBC6294A2D3200F8E7B3 /* Alamofire in Frameworks */,
-				366FBBD5294A327800F8E7B3 /* RxSwift in Frameworks */,
+				361AE283294E9BBD0092FCD2 /* RxSwift in Frameworks */,
 				366FBBC9294A2D5D00F8E7B3 /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36AE2EC0294E9E0C007B0F67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36AE2ED3294E9F6D007B0F67 /* RxSwift in Frameworks */,
+				36AE2ED1294E9F6D007B0F67 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +93,9 @@
 			isa = PBXGroup;
 			children = (
 				366FBBA82949D1CC00F8E7B3 /* AppStoreSearchApp */,
+				36AE2EC4294E9E0C007B0F67 /* AppStoreSearchAppTests */,
 				366FBBA72949D1CC00F8E7B3 /* Products */,
+				36AE2ECF294E9F6D007B0F67 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				366FBBA62949D1CC00F8E7B3 /* AppStoreSearchApp.app */,
+				36AE2EC3294E9E0C007B0F67 /* AppStoreSearchAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +164,21 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		36AE2EC4294E9E0C007B0F67 /* AppStoreSearchAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				36AE2EC5294E9E0C007B0F67 /* AppStoreSearchAppTests.swift */,
+			);
+			path = AppStoreSearchAppTests;
+			sourceTree = "<group>";
+		};
+		36AE2ECF294E9F6D007B0F67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,12 +198,34 @@
 			packageProductDependencies = (
 				366FBBC5294A2D3200F8E7B3 /* Alamofire */,
 				366FBBC8294A2D5D00F8E7B3 /* Kingfisher */,
-				366FBBD2294A327800F8E7B3 /* RxCocoa */,
-				366FBBD4294A327800F8E7B3 /* RxSwift */,
+				361AE280294E9BBC0092FCD2 /* RxCocoa */,
+				361AE282294E9BBD0092FCD2 /* RxSwift */,
 			);
 			productName = AppStoreSearchApp;
 			productReference = 366FBBA62949D1CC00F8E7B3 /* AppStoreSearchApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		36AE2EC2294E9E0C007B0F67 /* AppStoreSearchAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36AE2EC9294E9E0C007B0F67 /* Build configuration list for PBXNativeTarget "AppStoreSearchAppTests" */;
+			buildPhases = (
+				36AE2EBF294E9E0C007B0F67 /* Sources */,
+				36AE2EC0294E9E0C007B0F67 /* Frameworks */,
+				36AE2EC1294E9E0C007B0F67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36AE2EC8294E9E0C007B0F67 /* PBXTargetDependency */,
+			);
+			name = AppStoreSearchAppTests;
+			packageProductDependencies = (
+				36AE2ED0294E9F6D007B0F67 /* RxCocoa */,
+				36AE2ED2294E9F6D007B0F67 /* RxSwift */,
+			);
+			productName = AppStoreSearchAppTests;
+			productReference = 36AE2EC3294E9E0C007B0F67 /* AppStoreSearchAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -175,6 +239,10 @@
 				TargetAttributes = {
 					366FBBA52949D1CC00F8E7B3 = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					36AE2EC2294E9E0C007B0F67 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 366FBBA52949D1CC00F8E7B3;
 					};
 				};
 			};
@@ -190,13 +258,14 @@
 			packageReferences = (
 				366FBBC4294A2D3200F8E7B3 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				366FBBC7294A2D5D00F8E7B3 /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				366FBBD1294A327800F8E7B3 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				361AE27F294E9BBC0092FCD2 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 366FBBA72949D1CC00F8E7B3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				366FBBA52949D1CC00F8E7B3 /* AppStoreSearchApp */,
+				36AE2EC2294E9E0C007B0F67 /* AppStoreSearchAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -209,6 +278,13 @@
 				366FBBB62949D1CE00F8E7B3 /* LaunchScreen.storyboard in Resources */,
 				366FBBB32949D1CE00F8E7B3 /* Assets.xcassets in Resources */,
 				366FBBB12949D1CC00F8E7B3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36AE2EC1294E9E0C007B0F67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +311,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		36AE2EBF294E9E0C007B0F67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36AE2EC6294E9E0C007B0F67 /* AppStoreSearchAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36AE2EC8294E9E0C007B0F67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 366FBBA52949D1CC00F8E7B3 /* AppStoreSearchApp */;
+			targetProxy = 36AE2EC7294E9E0C007B0F67 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		366FBBAF2949D1CC00F8E7B3 /* Main.storyboard */ = {
@@ -353,6 +445,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -429,6 +522,44 @@
 			};
 			name = Release;
 		};
+		36AE2ECA294E9E0C007B0F67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PF8SSD5DBD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yimseongmin.AppStoreSearchAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppStoreSearchApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AppStoreSearchApp";
+			};
+			name = Debug;
+		};
+		36AE2ECB294E9E0C007B0F67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PF8SSD5DBD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yimseongmin.AppStoreSearchAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppStoreSearchApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AppStoreSearchApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -450,9 +581,26 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		36AE2EC9294E9E0C007B0F67 /* Build configuration list for PBXNativeTarget "AppStoreSearchAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36AE2ECA294E9E0C007B0F67 /* Debug */,
+				36AE2ECB294E9E0C007B0F67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		361AE27F294E9BBC0092FCD2 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		366FBBC4294A2D3200F8E7B3 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -469,17 +617,19 @@
 				kind = branch;
 			};
 		};
-		366FBBD1294A327800F8E7B3 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		361AE280294E9BBC0092FCD2 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 361AE27F294E9BBC0092FCD2 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		361AE282294E9BBD0092FCD2 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 361AE27F294E9BBC0092FCD2 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
 		366FBBC5294A2D3200F8E7B3 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 366FBBC4294A2D3200F8E7B3 /* XCRemoteSwiftPackageReference "Alamofire" */;
@@ -490,14 +640,14 @@
 			package = 366FBBC7294A2D5D00F8E7B3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
 		};
-		366FBBD2294A327800F8E7B3 /* RxCocoa */ = {
+		36AE2ED0294E9F6D007B0F67 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 366FBBD1294A327800F8E7B3 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = 361AE27F294E9BBC0092FCD2 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxCocoa;
 		};
-		366FBBD4294A327800F8E7B3 /* RxSwift */ = {
+		36AE2ED2294E9F6D007B0F67 /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 366FBBD1294A327800F8E7B3 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = 361AE27F294E9BBC0092FCD2 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */

@@ -63,7 +63,7 @@ class SearchViewController: UIViewController {
                         let keyword = keywords[indexPath.row].contents
                         
                         self.viewModel.searchMode = .searched
-                        self.viewModel.searchApp(keyword)
+                        self.viewModel.searchApp(keyword) {}
                         self.viewModel.saveRecentKeyword(keyword)
                         self.navigationItem.searchController?.searchBar.text = keyword
                     }
@@ -93,7 +93,7 @@ extension SearchViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let keyword = searchBar.text else { return }
         viewModel.searchMode = .searched
-        viewModel.searchApp(keyword)
+        viewModel.searchApp(keyword) {}
         viewModel.saveRecentKeyword(keyword)
     }
     
@@ -102,7 +102,7 @@ extension SearchViewController: UISearchBarDelegate {
             viewModel.searchMode = .recent
         } else {
             viewModel.searchMode = .entering
-            viewModel.searchApp(searchText)
+            viewModel.searchApp(searchText) {}
         }
     }
 }

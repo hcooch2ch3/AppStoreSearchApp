@@ -16,8 +16,13 @@ class AppCell: UITableViewCell {
     @IBOutlet weak var starTotalCountLabel: UILabel!
     @IBOutlet weak var screenShotsStackView: UIStackView!
     @IBOutlet weak var ratingCountLabel: UILabel!
+    @IBOutlet weak var downloadButton: UIButton!
     
     func configureCell(_ result: Result) {
+        downloadButton.backgroundColor = .systemGray6
+        downloadButton.layer.masksToBounds = true
+        downloadButton.layer.cornerRadius = 10.0
+        
         titleLabel.text = result.trackName
         subtitleLabel.text = result.primaryGenreName
         if let userRatingCount = result.userRatingCount {
@@ -25,6 +30,8 @@ class AppCell: UITableViewCell {
         }
         if let artworkUrl512 = result.artworkUrl512, let url = URL(string: artworkUrl512) {
             iconImageView.kf.setImage(with: url)
+            iconImageView.clipsToBounds = true
+            iconImageView.layer.cornerRadius = 20
         }
         if let screenshotUrls = result.screenshotUrls {
             configureScreenshots(screenshotUrls)
@@ -45,6 +52,8 @@ class AppCell: UITableViewCell {
                 if index >= 3 { return }
                 guard let url = URL(string: screenshotUrl) else { continue }
                 let imageView = UIImageView()
+                imageView.clipsToBounds = true
+                imageView.layer.cornerRadius = 20
                 
                 imageView.kf.setImage(with: url)
                 screenShotsStackView.addArrangedSubview(imageView)
@@ -55,6 +64,8 @@ class AppCell: UITableViewCell {
         } else {
             guard let firstUrl = screenshotUrls.first, let url = URL(string: firstUrl) else { return }
             let imageView = UIImageView()
+            imageView.clipsToBounds = true
+            imageView.layer.cornerRadius = 20
             imageView.kf.setImage(with: url)
             screenShotsStackView.addArrangedSubview(imageView)
             imageView.translatesAutoresizingMaskIntoConstraints = false

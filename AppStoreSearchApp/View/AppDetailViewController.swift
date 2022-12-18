@@ -29,14 +29,28 @@ class AppDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        setUpCollectionView()
+        setUpOtherViews()
         
+        titleLabel.text = result?.trackName
+        if let artworkUrl512 = result?.artworkUrl512, let url = URL(string: artworkUrl512) {
+            iconImageView.kf.setImage(with: url)
+        }
+        appDescriptionLabel.text = result?.appDescription
+        subtitleLabel.text = result?.artistName
+    }
+    
+    func setUpOtherViews() {
         downloadButton.backgroundColor = .systemGray6
         downloadButton.layer.masksToBounds = true
         downloadButton.layer.cornerRadius = 10.0
         
         iconImageView.clipsToBounds = true
         iconImageView.layer.cornerRadius = 20
-        
+    }
+    
+    func setUpCollectionView() {
         if let firstUrl = result?.screenshotUrls?.first, firstUrl.contains("406x228") {
             let ratio = 0.8
             let width = 406 * ratio
@@ -46,13 +60,6 @@ class AppDetailViewController: UIViewController {
         } else {
             Const.itemSize = CGSize(width: 300 * (392.0/696.0), height: 300)
         }
-        
-        titleLabel.text = result?.trackName
-        if let artworkUrl512 = result?.artworkUrl512, let url = URL(string: artworkUrl512) {
-            iconImageView.kf.setImage(with: url)
-        }
-        appDescriptionLabel.text = result?.appDescription
-        subtitleLabel.text = result?.artistName
         
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
